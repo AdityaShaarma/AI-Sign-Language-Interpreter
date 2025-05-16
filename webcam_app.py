@@ -3,7 +3,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 
 # Load the model
-model = load_model('models/asl_model.keras')
+model = load_model('models/model.keras')
 
 # Map label indices to ASL letters (excluding J and Z which require motion)
 labels_map = [chr(i + 65) for i in range(26)] # A-Z
