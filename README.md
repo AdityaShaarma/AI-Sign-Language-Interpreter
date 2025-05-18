@@ -10,7 +10,7 @@ The [Sign Language MNIST dataset](https://www.kaggle.com/datasets/datamunge/sign
 
 - **28×28 grayscale images** representing ASL letters
 - **27,455 training samples** and **7,172 testing samples**
-- **24 class labels** (A–Y, excluding J and Z due to motion-based gestures)
+- **24 class labels** (A–Y, excluding J and Z as these gestures require motion)
 
 Each row contains a label (0–25 excluding 9 and 25) and pixel values (784 total) flattened from a 28x28 image.
 
@@ -46,7 +46,7 @@ This plot of average pixel values across all samples shows common gesture patter
 - Reshaped data to (28, 28, 1) for compatibility with CNNs
 - Applied one-hot encoding to labels using `to_categorical` from TensorFlow
 
-The dataset was split into training and test sets using the predefined CSVs and saved into a `/data/processed/` folder for modeling.
+The Kaggle dataset was already split into training and test sets but data was prepocessed and saved into the `/data/processed/` folder for modeling.
 
 ---
 
@@ -60,6 +60,8 @@ A deep CNN was constructed using TensorFlow’s Keras API, with the following la
 - **Flatten layer**
 - **Dense (512 units)** with ReLU + **Dropout (0.25)**
 - **Output Dense (25 units)** with softmax activation
+
+**Below is the architecture:**
 
 <img src="images/cnn_model_architecture.png" alt="Model Architecture" width="650"/>
 
@@ -109,13 +111,13 @@ These metrics confirm the model’s suitability for real-time applications and s
 
 ---
 
-## Additional Modeling Benchmarks
+## Model Selection
 
 As a preliminary step, multiple traditional machine learning models were tested on the raw, flattened pixel data:
 
-- **Random Forest**: ~85% accuracy
-- **Histogram-Based Gradient Boosting**: ~90% accuracy
-- **K-Nearest Neighbors**: Performance plateaued after `k=5`
+- **Random Forest**: ~81% accuracy
+- **Histogram-Based Gradient Boosting**: ~78% accuracy
+- **K-Nearest Neighbors**: ~81% accuracy (Performance plateaued after `k=1`)
 
 Although traditional models demonstrated decent accuracy, their lack of spatial awareness limited performance. These served as helpful baselines to highlight the superiority of CNNs for image classification.
 
