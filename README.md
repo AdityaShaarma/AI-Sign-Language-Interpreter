@@ -117,8 +117,6 @@ As a preliminary step, multiple traditional machine learning models were tested 
 - **Histogram-Based Gradient Boosting**: ~90% accuracy
 - **K-Nearest Neighbors**: Performance plateaued after `k=5`
 
-### KNN Elbow Plot (not shown)
-
 Although traditional models demonstrated decent accuracy, their lack of spatial awareness limited performance. These served as helpful baselines to highlight the superiority of CNNs for image classification.
 
 ---
@@ -128,7 +126,7 @@ Although traditional models demonstrated decent accuracy, their lack of spatial 
 - **Early Convergence**: Major improvements occurred within the first 15–20 epochs.
 - **Dropout Effectiveness**: Helped mitigate overfitting without sacrificing accuracy.
 - **Augmentation Impact**: Increased generalization on the test set despite synthetic data variations.
-- **Class Separation**: Even challenging signs (e.g., T vs. R or M vs. N) were classified accurately.
+- **Class Separation**: Even challenging signs (e.g., T vs. R or M vs. N) were almost classified perfectly.
 
 ---
 
@@ -165,7 +163,7 @@ This model has wide-ranging applications that extend beyond academic experimenta
 AI Sign Language Interpreter/
 │
 ├── data/
-│   ├── raw/                   # Original Kaggle dataset
+│   ├── raw/                   # Original Kaggle datasets (Split into train and test)
 │   └── processed/             # Scaled and cleaned datasets
 │
 ├── images/                    # Visualizations
@@ -209,4 +207,4 @@ This project is open-sourced under the [CC0: Public Domain License](https://crea
 ## Acknowledgments
 
 - Dataset: [Sign Language MNIST on Kaggle](https://www.kaggle.com/datasets/datamunge/sign-language-mnist)
-- Libraries: TensorFlow, Scikit-learn, Seaborn, Matplotlib, Keras
+- Libraries: TensorFlow, Keras, Scikit-learn, pandas, Seaborn, Matplotlib, CV2
