@@ -1,6 +1,6 @@
 # AI Sign Language Interpreter
 
-A deep learning-based image classification project that translates American Sign Language (ASL) alphabets from grayscale images. This project utilizes a Convolutional Neural Network (CNN) trained on the [Sign Language MNIST dataset](https://www.kaggle.com/datasets/datamunge/sign-language-mnist) to interpret static hand gestures representing the ASL alphabet (excluding J and Z).
+A computer vision project that interprets American Sign Language (ASL) hand gestures from images with over 99% accuracy. Built to support accessibility and inclusive communication, this model uses deep learning techniques to classify ASL alphabet signs from grayscale images. The project leverages a Convolutional Neural Network (CNN) trained on the [Sign Language MNIST dataset](https://www.kaggle.com/datasets/datamunge/sign-language-mnist) to recognize 24 static ASL letters (excluding J and Z, which require motion).
 
 ---
 
