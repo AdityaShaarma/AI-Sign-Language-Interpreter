@@ -209,4 +209,4 @@ This project is open-sourced under the [CC0: Public Domain License](https://crea
 ## Acknowledgments
 
 - Dataset: [Sign Language MNIST on Kaggle](https://www.kaggle.com/datasets/datamunge/sign-language-mnist)
-- Libraries: TensorFlow, Keras, Scikit-learn, pandas, Seaborn, Matplotlib, CV2
+- Libraries: TensorFlow, Keras, Scikit-learn, pandas, Seaborn, Matplotlib, OpenCV
