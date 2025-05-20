@@ -40,7 +40,19 @@ This plot of average pixel values across all samples shows common gesture patter
 
 ---
 
-## Data Preprocessing
+## Model Selection
+
+As a preliminary step, multiple traditional machine learning models were tested on the raw, flattened pixel data:
+
+- **Random Forest**: ~81% accuracy
+- **Histogram-Based Gradient Boosting**: ~78% accuracy
+- **K-Nearest Neighbors**: ~81% accuracy (Performance plateaued after `k=1`)
+
+Although traditional models demonstrated decent accuracy, their lack of spatial awareness limited performance. These served as helpful baselines to highlight the superiority of CNNs for image classification.
+
+---
+
+## Data Preprocessing for CNN
 
 - Normalized all pixel values to the range [0, 1]
 - Reshaped data to (28, 28, 1) for compatibility with CNNs
@@ -108,18 +120,6 @@ The model achieved perfect or near-perfect scores across nearly all classes:
 - **Overall Accuracy**: **99.55%**
 
 These metrics confirm the model’s suitability for real-time applications and strong robustness across the dataset.
-
----
-
-## Model Selection
-
-As a preliminary step, multiple traditional machine learning models were tested on the raw, flattened pixel data:
-
-- **Random Forest**: ~81% accuracy
-- **Histogram-Based Gradient Boosting**: ~78% accuracy
-- **K-Nearest Neighbors**: ~81% accuracy (Performance plateaued after `k=1`)
-
-Although traditional models demonstrated decent accuracy, their lack of spatial awareness limited performance. These served as helpful baselines to highlight the superiority of CNNs for image classification.
 
 ---
 
