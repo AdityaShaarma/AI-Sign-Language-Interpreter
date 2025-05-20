@@ -134,28 +134,42 @@ These metrics confirm the model’s suitability for real-time applications and s
 
 ## Business and Social Impact
 
-This model has wide-ranging applications that extend beyond academic experimentation:
+The AI Sign Language Interpreter addresses a critical communication gap by using computer vision to facilitate interaction between sign language users and non-signers. While built as a deep learning project, it has wide-ranging applications across accessibility, education, enterprise communication, and edge computing.
 
-### Accessibility
+### Accessibility and Inclusion
 
-- Real-time ASL recognition in video calls or public kiosks
-- Integration into wearable devices or AR headsets for live translation
-- Text-to-speech or subtitle generation for the hearing impaired
+Sign language is the primary mode of communication for millions of deaf and hard-of-hearing individuals. Yet, many public-facing and digital systems lack built-in support. This project provides a potential foundation for scalable accessibility solutions:
 
-### Education
+- **Real-Time ASL Translation**: The model can be integrated into video conferencing platforms to convert ASL gestures into real-time subtitles or speech, making meetings more inclusive.
+- **Public Kiosks and Terminals**: Retail, banking, and healthcare kiosks can use this system to support ASL-based interaction, eliminating the need for touchscreens or verbal communication.
+- **Wearable Device Integration**: Combined with AR devices or smart glasses, the model can power live gesture-to-text overlays to aid private and autonomous communication.
+- **Assistive Technology**: Incorporation into text-to-speech tools enables individuals to speak through gesture recognition, particularly useful for non-verbal users.
 
-- Interactive learning tools for children and adults learning ASL
-- Feedback-based platforms for sign language practice and correction
+### Education and Learning
 
-### Customer Service
+The system also offers impactful uses in ASL education and language learning environments:
 
-- Sign recognition for retail or healthcare kiosks
-- Communication aid in high-noise environments
+- **Interactive Learning Tools**: Applications built with this model can provide real-time feedback to students learning ASL, enhancing engagement and comprehension.
+- **Gamified Platforms for Children**: ASL alphabet recognition can be used to create child-friendly games, making language acquisition more engaging.
+- **Support for Special Education**: Educators can deploy this tool to support students with speech impairments or developmental conditions who benefit from visual communication.
 
-### Edge Deployment
+### Customer Service and Industry Applications
 
-- Low-memory footprint allows deployment on devices like Raspberry Pi
-- Fast inference (<5ms per image) makes it ideal for real-time use cases
+Communication barriers in customer-facing environments and high-noise workplaces can be reduced using gesture recognition systems:
+
+- **Retail and Healthcare Kiosks**: ASL recognition can empower customers to interact with service points using signs, improving experience for the hearing-impaired.
+- **Emergency and Medical Intake**: Hospitals can use ASL interfaces in triage or emergency rooms where human interpreters may not be immediately available.
+- **Industrial Communication**: In environments with high noise levels, such as airports, construction sites, or factories, gesture-based input reduces the risk of miscommunication.
+
+### Edge Deployment and Efficiency
+
+The model was built to run efficiently on local hardware without reliance on cloud infrastructure:
+
+- **Edge-Ready Architecture**: With a compact design, the model can run on devices like Raspberry Pi or Jetson Nano, opening doors for deployment in embedded systems.
+- **Fast Inference Time**: Predictions occur in under 5 milliseconds per frame, enabling real-time response rates necessary for practical, interactive applications.
+- **Offline Functionality**: Since the model runs locally, it supports use cases in remote or low-connectivity regions, making it suitable for NGOs, education, and healthcare in underserved areas.
+
+This project demonstrates how deep learning and computer vision can directly contribute to accessible technology, educational advancement, and inclusive design practices. Its potential spans from academic research to deployable, high-impact real-world tools.
 
 ---
 
