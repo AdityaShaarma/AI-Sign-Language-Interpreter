@@ -1,5 +1,7 @@
 # AI Sign Language Interpreter
 
+#### ([Finished Deployed Product]) (https://asl-interpreter.streamlit.app/)
+
 A computer vision project that interprets American Sign Language (ASL) hand gestures from images with over 99% accuracy. Built to support accessibility and inclusive communication, this model uses deep learning techniques to classify ASL alphabet signs from grayscale images. The project leverages a Convolutional Neural Network (CNN) trained on the [Sign Language MNIST dataset](https://www.kaggle.com/datasets/datamunge/sign-language-mnist) to recognize 24 static ASL letters (excluding J and Z, which require motion).
 
 ---
