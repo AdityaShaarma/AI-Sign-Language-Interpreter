@@ -134,4 +134,3 @@ if st.session_state["start_stream"] and not st.session_state["stop_stream"]:
 
     # Release the webcam after stream stops
     cap.release()
-    cv2.destroyAllWindows()
