@@ -6,8 +6,12 @@ from collections import deque
 import statistics
 import mediapipe as mp
 
-# Load the trained model
-model = load_model('models/model.keras')
+# Load the trained model. Makes sure model is loaded once per session
+@st.cache_resource
+def load_trained_model():
+    return load_model('models/model.keras')
+
+model = load_trained_model()
 
 # Get the number of output classes from the model's final layer
 output_classes = model.output_shape[1]
