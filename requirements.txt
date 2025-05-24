@@ -1,9 +1,9 @@
-streamlit
-tensorflow
+streamlit==1.45.1
+tensorflow==2.12.0
+opencv-python-headless==4.8.0.76
 numpy
 pandas
+mediapipe
 matplotlib
 seaborn
 scikit-learn
-opencv-python-headless
-mediapipe
